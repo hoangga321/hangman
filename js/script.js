@@ -190,8 +190,8 @@ function startGame() {
     guessed = [];
     lifeCount = MAX_LIVES;
     gameOver = false;
-
-    hint.textContent = pick.hint;
+    
+    hint.textContent = '💡 힌트: ' + pick.hint + '  (' + answer.length + '글자)';
     message.textContent = '단어를 맞춰보세요!';
     message.className = 'message';
 
