@@ -81,6 +81,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: .45rem;
+    margin-bottom: 1.5rem;
 }
 
 /* ★ TODO 5-2 .key  (알파벳 버튼 하나의 기본 모양)
@@ -96,6 +97,8 @@ h1 {
     color: var(--text-dark);
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
+    transition: background .2s, color .2s;
 }
 
 /* ★ TODO 5-3 .key:enabled:hover  (누를 수 있는 버튼 위에 마우스를 올렸을 때)
