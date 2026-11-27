@@ -150,7 +150,7 @@ function checkWin() {
     }
 
     if (allFound) {
-        message.textContent = '정답입니다!';
+        message.textContent = '👏 정답입니다!';
         message.className = 'message win';
         winCount += 1;
         endGame();
@@ -159,9 +159,11 @@ function checkWin() {
 
 function checkLose() {
     if (lifeCount === 0) {
-        message.textContent = `패배했습니다! 정답은 ${answer.split('').join(' ')} 입니다.`;
+        message.textContent = '😢 패배했습니다! 정답은 ' + answer + ' 입니다.';
         message.className = 'message lose';
         loseCount += 1;
+
+        wordDisplay.textContent = answer.split('').join(' ');
         endGame();
     }
 }
